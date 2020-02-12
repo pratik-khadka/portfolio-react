@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Press+Start+2P&display=swap&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Bungee|Do+Hyeon|Press+Start+2P&display=swap&subset=cyrillic-ext');
+.App {
+  text-align: center;
+  background-color:#212121;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.lotties{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width: 480px){
+  .lotties{
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+
+.user-div{
+  margin-top: 20px;
+  background-color: #61dafb;
+}
+
+.custom-lottie{
+  height: 100px;
+  width: 50%;
+}
+
+.div-container{
+  background-color: #424242;
+}
+
+.custom-header-navbar{
+  background-image: linear-gradient(to right, #0D0D0D, #151515, #0D0D0D);
+  color: aliceblue;
+  font-size: 30px;
+  font-family: 'Special Elite', cursive;
+
+}
+
+.form-navbar{
+  width: 200px;
+}
+
+.navbar-dark .navbar-brand{
+  color: #FFFFFF;
+}
+
+.animated-text{
+  margin-top: 30px;
+  font-size: 30px;
+  color: #FFFFFF;
+  z-index: 5;
+  font-family: 'Press Start 2P', cursive;
+}
+
+
+.hi-text{
+  color: #FFFFFF;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 20px;
+  z-index: 5;
+  line-height: 1.1;
+
+}
+
+.name-text{
+  margin-top: 20px;
+  color: #FFFFFF;
+  font-family: 'Bungee', cursive;
+  font-size: 70px;
+  line-height: 1.1;
+  z-index: 5;
+}
+
+.para-text{
+  margin-top: 20px;
+  color: #FFFFFF;
+  font-family: 'Bungee', cursive;
+  font-size: 50px;
+  line-height: 1.1;
+  z-index: 5;
+  animation: color-change 4s infinite;
+}
+
+@keyframes color-change {
+  0% { color: rgb(219, 211, 211); }
+  20% { color: #EEEEEE; }
+  30% { color: #EEEEEE; }
+  50% { color: #BDBDBD; }
+  80% { color: #757575; }
+  100% { color: #616161; }
+}
+
+.bio-paragraph{
+  margin-top: 40px;
+  color: #FFFFFF;
+  width: 50%;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 20px;
+  z-index: 5;
+  text-align: start;
+}
+
+.btn-row{
+  margin-top: 50px;
+}
+
+Button{
+  border: 1px solid #FFFFFF;
+  background: transparent;
+}
