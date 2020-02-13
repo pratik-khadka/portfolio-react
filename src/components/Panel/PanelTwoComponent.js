@@ -3,6 +3,7 @@ import Particles from 'react-particles-js';
 import '../Panel/Panel.css';
 
 class PanelTwo extends Component {
+
     render() {
         return (
             <Particles
@@ -17,14 +18,14 @@ class PanelTwo extends Component {
                         },
                         "line_linked": {
                             "enable": true,
-                            "opacity": 0.02
+                            "opacity": 0.09
                         },
                         "move": {
                             "direction": "right",
                             "speed": 0.05
                         },
                         "size": {
-                            "value": 1
+                            "value": 1.5
                         },
                         "opacity": {
                             "anim": {

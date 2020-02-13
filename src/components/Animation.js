@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import Lottie from 'react-lottie'
-import animationData from '../lotties/13624-flying-searcher.json'
-class ControlledLottie extends Component {
+import animationData from '../lotties/office.json'
+import '../App.css'
+
+
+class ProfileLottie extends Component {
   state = {isStopped: false, isPaused: false}
 
   render(){
@@ -20,10 +23,11 @@ class ControlledLottie extends Component {
         <Lottie options={defaultOptions}
               height={300}
               width={200}
+              className="profile-lottie"
         />
       </div>
     )
   }
 }
 
-export default ControlledLottie
+export default ProfileLottie

@@ -6,6 +6,7 @@ import { Tween, Timeline } from 'react-gsap';
 import styled from 'styled-components';
 import PanelOne from '../components/Panel/PanelOneComponent';
 import PanelTwo from '../components/Panel/PanelTwoComponent';
+import PanelContainer from './Panel/PanelTwoContainer'
 import TextAnimation from '../components/AnimatedText'
 
 
@@ -32,11 +33,14 @@ function Mainpage() {
   }
   
   .panel.one {
-    background-image: linear-gradient(to right, #0D0D0D, #151515, #0D0D0D);
+      background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
   }
   
   .panel.turqoise {
-    background-image: linear-gradient(to right, #0D0D0D, #151515, #0D0D0D);
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+
   }
   
   .panel.green {
@@ -128,11 +132,8 @@ function Mainpage() {
                                                 height: "100%"
                                             }}
                                         >
-                                            <div className="container">
-                                                <div className="row hi-text align-text-center" style={{ marginTop: 165 }}>
-                                                    About Me
-                                                </div>
-                                            </div>
+
+                                            <PanelContainer/>
                                         </div>
                                     </div>
                                 </section>
