@@ -72,7 +72,7 @@
   background-image: linear-gradient(to right, #000000, #000000, #1f1b1b);
   color: aliceblue;
   font-size: 30px;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Do Hyeon', sans-serif;
 
 }
 
@@ -160,3 +160,5 @@ Button{
   border: 1px solid black;
   border-width: 0;
   }
+
+ 

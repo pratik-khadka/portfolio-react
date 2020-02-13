@@ -22,7 +22,7 @@ class ProfileLottie extends Component {
       <div className="controlled">
         <Lottie options={defaultOptions}
               height={300}
-              width={200}
+              width={300}
               className="profile-lottie"
         />
       </div>

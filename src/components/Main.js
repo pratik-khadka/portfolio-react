@@ -60,7 +60,7 @@ function Mainpage() {
                         triggerHook="onLeave"
                         duration="300%"
                         pin>
-                        <Timeline
+                        <Timeline 
                             wrapper={<div id="pinContainer" />}>
                             <section className="panel one">
                                 <div
