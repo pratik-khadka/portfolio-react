@@ -1,10 +1,11 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import '../App.css'
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
 import styled from 'styled-components';
 import PanelOne from '../components/Panel/PanelOneComponent';
+import PanelTwo from '../components/Panel/PanelTwoComponent';
 import TextAnimation from '../components/AnimatedText'
 
 
@@ -35,15 +36,15 @@ function Mainpage() {
   }
   
   .panel.turqoise {
-    background-image: linear-gradient( #151515, #6A6A68);
+    background-image: linear-gradient(to right, #0D0D0D, #151515, #0D0D0D);
   }
   
   .panel.green {
-    background-image: linear-gradient( #151515, #6A6A68);
+    background-image: linear-gradient(to right, #0D0D0D, #151515, #0D0D0D);
   }
   
   .panel.bordeaux {
-    background-image: linear-gradient( #151515, #6A6A68);
+    background-image: linear-gradient(to right, #0D0D0D, #151515, #0D0D0D);
   }
 `;
 
@@ -78,7 +79,7 @@ function Mainpage() {
                                         }}
                                     >
                                         <div className="container">
-                                            <div className="row"></div>
+
                                             <TextAnimation />
                                             <div className="row hi-text" style={{ marginTop: 165 }}>
                                                 Hi,  my name is
@@ -106,7 +107,35 @@ function Mainpage() {
                             <Tween
                                 from={{ x: '-100%' }}
                                 to={{ x: '0%' }}>
-                                <section className="panel turqoise"><span>Panel</span></section>
+                                <section className="panel turqoise">
+                                    <div
+                                        style={{
+                                            position: "absolute",
+                                            top: 0,
+                                            left: 0,
+                                            width: "100%",
+                                            height: "100%"
+                                        }}
+                                    >
+
+                                        <PanelTwo />
+                                        <div
+                                            style={{
+                                                position: "absolute",
+                                                top: 0,
+                                                left: 0,
+                                                width: "100%",
+                                                height: "100%"
+                                            }}
+                                        >
+                                            <div className="container">
+                                                <div className="row hi-text align-text-center" style={{ marginTop: 165 }}>
+                                                    About Me
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
                             </Tween>
                             <Tween
                                 from={{ x: '100%' }}

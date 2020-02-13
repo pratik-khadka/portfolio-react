@@ -147,3 +147,8 @@ Button{
   border: 1px solid #FFFFFF;
   background: transparent;
 }
+
+.custom-profile-card{
+  background: transparent;
+  text-align: center;
+}
