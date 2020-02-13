@@ -1,12 +1,13 @@
 import React from 'react';
-import { Button, Card } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import '../App.css'
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
 import styled from 'styled-components';
 import PanelOne from '../components/Panel/PanelOneComponent';
 import PanelTwo from '../components/Panel/PanelTwoComponent';
-import PanelContainer from './Panel/PanelTwoContainer'
+import PanelThree from '../components/Panel/PanelThreeComponent';
+import PanelTwoContainer from './Panel/PanelTwoContainer'
 import TextAnimation from '../components/AnimatedText'
 
 
@@ -60,7 +61,7 @@ function Mainpage() {
                         triggerHook="onLeave"
                         duration="300%"
                         pin>
-                        <Timeline 
+                        <Timeline
                             wrapper={<div id="pinContainer" />}>
                             <section className="panel one">
                                 <div
@@ -109,7 +110,7 @@ function Mainpage() {
                                 </div>
                             </section>
                             <Tween
-                                from={{ x: '-100%' }}
+                                from={{ x: '-110%' }}
                                 to={{ x: '0%' }}>
                                 <section className="panel turqoise">
                                     <div
@@ -122,7 +123,7 @@ function Mainpage() {
                                         }}
                                     >
 
-                                        <PanelTwo />
+                                        <PanelTwo  />
                                         <div
                                             style={{
                                                 position: "absolute",
@@ -133,7 +134,7 @@ function Mainpage() {
                                             }}
                                         >
 
-                                            <PanelContainer/>
+                                            <PanelTwoContainer/>
                                         </div>
                                     </div>
                                 </section>
@@ -141,7 +142,9 @@ function Mainpage() {
                             <Tween
                                 from={{ x: '100%' }}
                                 to={{ x: '0%' }}>
-                                <section className="panel green"><span>Panel</span></section>
+                                <section className="panel green">
+                                        <PanelThree/>
+                                </section>
                             </Tween>
                             <Tween
                                 from={{ y: '-100%' }}
@@ -153,6 +156,7 @@ function Mainpage() {
                 </Controller>
             </SectionWipes2Styled>
         </div>
+
     );
 }
 

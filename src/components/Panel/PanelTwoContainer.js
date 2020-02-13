@@ -3,7 +3,7 @@ import '../Panel/Panel.css';
 import { FaGithubAlt, FaLinkedin, FaCodepen, FaInstagram, FaTwitter } from 'react-icons/fa';
 import ProfileLottie from '../Animation'
 
-function PanelContainer() {
+function PanelTwoContainer() {
     return (
         <div className="container panelContainer">
             <div className="row">
@@ -14,7 +14,7 @@ function PanelContainer() {
                 <div className="col description-col">
                     <p>Hello! I'm Pratik, a software engineer based in Kathmandu who enjoys building things that live on the internet.
                     I develop exceptional websites and web apps that provide intuitive, pixel-perfect user interfaces with efficient and modern backends.</p>
-                    <p>Shortly after graduating from London Metropolitan University, I joined the engineering team at Insight Workshop where I work on a wide variety of interesting and meaningful projects on a daily basis.
+                    <p>Shortly after graduating from Islington College, I joined the engineering team at Insight Workshop where I work on a wide variety of interesting and meaningful projects on a daily basis.
                     </p>
                     <p>Here are a few technologies I've been working with recently:</p>
                     <div className="row">
@@ -38,7 +38,7 @@ function PanelContainer() {
                     <ProfileLottie className="profile-lottie" />
                 </div>
             </div>
-            <div className="footer">
+            <div className="footer mt-5">
             <FaGithubAlt className="icon-links hvr-grow" />
             <FaLinkedin className="icon-links hvr-grow"/>
             <FaCodepen className="icon-links hvr-grow"/>
@@ -50,4 +50,4 @@ function PanelContainer() {
 }
 
 
-export default PanelContainer
+export default PanelTwoContainer

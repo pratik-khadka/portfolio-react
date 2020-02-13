@@ -5,40 +5,8 @@
 .App {
   text-align: center;
   background-color:#212121;
+  cursor: pointer;
 }
-
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 
 .lotties{
   display: grid;
@@ -86,7 +54,7 @@
 
 .animated-text{
   margin-top: 30px;
-  font-size: 30px;
+  font-size: 25px;
   color: #FFFFFF;
   z-index: 5;
   font-family: 'Press Start 2P', cursive;
@@ -122,11 +90,8 @@
 }
 
 @keyframes color-change {
-  0% { color: rgb(219, 211, 211); }
-  20% { color: #EEEEEE; }
-  30% { color: #EEEEEE; }
-  50% { color: #BDBDBD; }
-  80% { color: #757575; }
+  0% { color: rgb(131, 122, 122); }
+  50% { color: #757575; }
   100% { color: #616161; }
 }
 
@@ -160,5 +125,12 @@ Button{
   border: 1px solid black;
   border-width: 0;
   }
+.get-in-toucch-btn{
+  background-color: transparent !important;
+  padding: 10px !important;
+  font-family: 'Do Hyeon', sans-serif;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF ;
+}
 
  
