@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Modal } from 'react-bootstrap';
 import '../App.css'
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
@@ -9,9 +9,12 @@ import PanelTwo from '../components/Panel/PanelTwoComponent';
 import PanelThree from '../components/Panel/PanelThreeComponent';
 import PanelTwoContainer from './Panel/PanelTwoContainer'
 import TextAnimation from '../components/AnimatedText'
+import ModalAnimation from '../components/ModalAnimation'
 
 
 function Mainpage() {
+
+    const [modalShow, setModalShow] = React.useState(false);
 
     const SectionWipes2Styled = styled.div`
   overflow: auto;
@@ -101,8 +104,12 @@ function Mainpage() {
                                                 I'm a software engineer based in Kathmandu specializing in building (and occasionally designing) exceptional, high-quality websites and applications.
                                              </div>
                                             <div className="row btn-row">
-                                                <Button variant='outline-light' className="get-in-toucch-btn">Get In Touch</Button>
+                                                <Button variant='outline-light' className="get-in-toucch-btn" onClick={() => setModalShow(true)}>Get In Touch</Button>
                                             </div>
+                                            <MyVerticallyCenteredModal
+                                                show={modalShow}
+                                                onHide={() => setModalShow(false)}
+                                            />
                                         </div>
 
 
@@ -123,7 +130,7 @@ function Mainpage() {
                                         }}
                                     >
 
-                                        <PanelTwo  />
+                                        <PanelTwo />
                                         <div
                                             style={{
                                                 position: "absolute",
@@ -134,7 +141,7 @@ function Mainpage() {
                                             }}
                                         >
 
-                                            <PanelTwoContainer/>
+                                            <PanelTwoContainer />
                                         </div>
                                     </div>
                                 </section>
@@ -143,20 +150,40 @@ function Mainpage() {
                                 from={{ x: '100%' }}
                                 to={{ x: '0%' }}>
                                 <section className="panel green">
-                                        <PanelThree/>
+                                    <PanelThree />
                                 </section>
                             </Tween>
-                            <Tween
-                                from={{ y: '-100%' }}
-                                to={{ y: '0%' }}>
-                                <section className="panel bordeaux"><span>Panel</span></section>
-                            </Tween>
+
                         </Timeline>
                     </Scene>
                 </Controller>
             </SectionWipes2Styled>
         </div>
 
+    );
+}
+
+function MyVerticallyCenteredModal(props) {
+    return (
+        <Modal
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            animation="true"
+            centered
+        >
+            <Modal.Header closeButton>
+                <Modal.Title id="contained-modal-title-vcenter">
+                    Modal heading
+          </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                <ModalAnimation/>
+            </Modal.Body>
+            <Modal.Footer>
+                <Button onClick={props.onHide}>Close</Button>
+            </Modal.Footer>
+        </Modal>
     );
 }
 

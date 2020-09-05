@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import Lottie from 'react-lottie'
-import animationData from '../lotties/15203-kid-on-laptop.json'
+import animationData from '../lotties/15145-ok-sign.json'
 import '../App.css'
 
 
-class ProfileLottie extends Component {
+class ModalAnimation extends Component {
 
   render(){
 
@@ -20,8 +20,8 @@ class ProfileLottie extends Component {
     return(
       <div className="controlled">
         <Lottie options={defaultOptions}
-              height={355}
-              width={368}
+              height={372}
+              width={370}
               className="profile-lottie"
         />
       </div>
@@ -29,4 +29,4 @@ class ProfileLottie extends Component {
   }
 }
 
-export default ProfileLottie
+export default ModalAnimation

@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import Lottie from 'react-lottie'
-import animationData from '../lotties/15203-kid-on-laptop.json'
-import '../App.css'
+import animationData from '../lotties/eye.json'
 
 
-class ProfileLottie extends Component {
+class PanelOneAnimation extends Component {
 
   render(){
 
@@ -20,13 +19,12 @@ class ProfileLottie extends Component {
     return(
       <div className="controlled">
         <Lottie options={defaultOptions}
-              height={355}
-              width={368}
-              className="profile-lottie"
+              height={200}
+              width={210}
         />
       </div>
     )
   }
 }
 
-export default ProfileLottie
+export default PanelOneAnimation

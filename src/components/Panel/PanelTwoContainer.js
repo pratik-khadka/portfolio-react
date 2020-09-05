@@ -23,6 +23,7 @@ function PanelTwoContainer() {
                                 <li>JavaScript (ES6+)</li>
                                 <li>React</li>
                                 <li>Angular JS</li>
+                                <li>AWS</li>
                             </ul>
                         </div>
                         <div className="col">
@@ -30,6 +31,7 @@ function PanelTwoContainer() {
                                 <li>HTML & (S)CSS</li>
                                 <li>Django</li>
                                 <li>JQuery</li>
+                                <li>Blockchain</li>
                             </ul>
                         </div>
                     </div>

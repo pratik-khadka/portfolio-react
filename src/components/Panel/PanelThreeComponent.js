@@ -15,7 +15,7 @@ class PanelThree extends Component {
                     height: "100%"
                 }}
             >
-                {/* <Particles
+                <Particles
                     params={{
                         "particles": {
                             "number": {
@@ -66,7 +66,7 @@ class PanelThree extends Component {
                                 }
                             }
                         }
-                    }} /> */}
+                    }} />
                 <div
                     style={{
                         position: "absolute",
