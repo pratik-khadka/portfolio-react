@@ -14,7 +14,7 @@ function PanelTwoContainer() {
                 <div className="col description-col">
                     <p>Hello! I'm Pratik, a software engineer based in Kathmandu who enjoys building things that live on the internet.
                     I develop exceptional websites and web apps that provide intuitive, pixel-perfect user interfaces with efficient and modern backends.</p>
-                    <p>Shortly after graduating from Islington College, I joined the engineering team at Insight Workshop where I work on a wide variety of interesting and meaningful projects on a daily basis.
+                    <p>Shortly after graduating from Islington College, I joined the engineering team at Outcode Software where I work on a wide variety of interesting and meaningful projects on a daily basis.
                     </p>
                     <p>Here are a few technologies I've been working with recently:</p>
                     <div className="row">

@@ -15,6 +15,9 @@
       margin-top: 200px;
       color: #FFFFFF;
       font-family: 'Do Hyeon', sans-serif;
+      overflow: scroll;
+    height: 800px;
+    overflow-x: hidden;
 
   }
   .number-span{
